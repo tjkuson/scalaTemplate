@@ -1,0 +1,27 @@
+# Scala stuff
+*.class
+.tasty
+
+# SBT
+project/project/
+project/target/
+target/
+
+# Bloop and Metals
+.bloop/
+.bsp/
+.metals/
+project/metals.sbt
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+*.log
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
