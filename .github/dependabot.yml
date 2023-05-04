@@ -1,0 +1,10 @@
+# Config for Dependabot updates.
+# https://docs.github.com/en/code-security/dependabot/working-with-dependabot
+
+version: 2
+updates:
+  # Update GitHub actions in workflows
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
