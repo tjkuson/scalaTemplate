@@ -4,7 +4,7 @@ This is a template for a simple Scala 3 project.
 
 ## Features
 
-- Scala 3.3.0 LTS
+- Scala 3.3.0 (LTS)
 - sbt
 - scalafmt
 - CI and dependencies check
