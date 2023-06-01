@@ -3,7 +3,7 @@ on:
   push:
   pull_request:
 jobs:
-  test:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -12,6 +12,8 @@ jobs:
         with:
           java-version: 17
           distribution: "temurin"
+      - name: Scala Steward Github Action
+        uses: scala-steward-org/scala-steward-action@v2.29.0
       - name: Check formatting
         run: sbt scalafmtCheckAll
       - name: Test
