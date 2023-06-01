@@ -12,5 +12,7 @@ jobs:
         with:
           java-version: 17
           distribution: "temurin"
+      - name: Check formatting
+        run: sbt scalafmtCheckAll
       - name: Test
         run: sbt clean test scalafmtCheckAll
